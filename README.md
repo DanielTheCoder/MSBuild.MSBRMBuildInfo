@@ -1,5 +1,7 @@
 # MSBuild.MSBRMBuildInfo
 
+[![Build status](https://ci.appveyor.com/api/projects/status/ehar1ei8n2d075rx?svg=true)](https://ci.appveyor.com/project/DanielTheCoder/msbuild-msbrmbuildinfo)
+
 MSBuild.MSBRMBuildInfo (MSBuild Release Management Build Info) is a simple solution to enable Application Insights deployment markers in an application without manually editing MSBuild files.
   
 ... *Application Insights is a set of services that integrates production monitoring data with development tools.* ...
