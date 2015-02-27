@@ -1,0 +1,27 @@
+﻿<!--
+Implementing Deployment Markers in Application Insights
+http://blogs.msdn.com/b/visualstudioalm/archive/2013/11/14/implementing-deployment-markers-in-application-insights.aspx
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+
+  <PropertyGroup>
+    <!-- Generate the BuildInfo.config file -->
+    <GenerateBuildInfoConfigFile>true</GenerateBuildInfoConfigFile>
+
+    <!-- Will add the builserver name -->
+    <IncludeServerNameInBuildInfo>true</IncludeServerNameInBuildInfo>
+
+    <!-- Will be embedded as unmanaged ressource -->
+    <AddBuildInfoToAssembly>true</AddBuildInfoToAssembly>
+
+    <!-- Version which is needed to import -->
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+
+  <!-- Workaround to allow 'GenerateBuildInfoConfigFile' also for console applications -->
+  <PropertyGroup Condition="'$(IsWap)' != 'true' and $(ProjectTypeGuids) == ''">
+    <WebProjectOutputDir>*Undefined*</WebProjectOutputDir>
+  </PropertyGroup>
+
+
+</Project>

@@ -1,0 +1,19 @@
+﻿<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+
+  <ItemGroup>
+    <additionalFiles Include="$(MSBuildThisProjectDirectory)build\**\*.*">
+      <targetFolder>MSBRMBuildInfo/build</targetFolder>
+    </additionalFiles>
+
+    <additionalFiles Include="$(MSBuildThisProjectDirectory)..\MSBRMBuildInfo\RMBuildInfo.props">
+      <targetFolder>MSBRMBuildInfo/content/Properties/Build</targetFolder>
+    </additionalFiles>
+
+    <!-- dependencies -->
+    <additionalFiles Include="$(MSBuildThisProjectDirectory)..\MSBRMBuildInfo\Properties\Build\IsWAP.props">
+      <targetFolder>MSBRMBuildInfo/build</targetFolder>
+    </additionalFiles>
+
+  </ItemGroup>
+
+</Project>

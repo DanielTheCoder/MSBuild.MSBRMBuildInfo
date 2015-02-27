@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<package >
+
+  <metadata minClientVersion="2.8.3">
+    <id>MSBuild.MSBRMBuildInfo</id>
+    <version>1.0.0</version>
+    <title>Application Insight deployment marker</title>
+    <authors>Daniel Sack</authors>
+    <owners>Daniel Sack</owners>
+    <licenseUrl>https://raw.github.com/DanielTheCoder/MSBuild.MSBRMBuildInfo/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/DanielTheCoder/MSBuild.MSBRMBuildInfo</projectUrl>
+    <iconUrl>https://raw.github.com/DanielTheCoder/MSBuild.MSBNuget/master/media/MSBNuget.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MSBuild.MSBRMBuildInfo (MSBuild Release Management Build Info) is a simple solution to enable Application Insights deployment markers in an application without manually editing MSBuild files.</description>
+    <copyright>Copyright 2015</copyright>
+    <tags>MSBuild ApplicationInsight BuildInfo DeploymentMarker</tags>
+    <releaseNotes>https://raw.github.com/DanielTheCoder/MSBuild.MSBNuget/master/changelog.txt</releaseNotes>
+  </metadata>
+
+</package>
