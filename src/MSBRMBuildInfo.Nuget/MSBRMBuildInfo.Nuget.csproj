@@ -13,6 +13,7 @@
     <NuGetPackageImportStamp>cda903c3</NuGetPackageImportStamp>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="build\MSBuild.MSBRMBuildInfo.targets" />
     <None Include="build\MSBuild.MSBRMBuildInfo.props" />
     <None Include="MSBRMBuildInfo.nuspec" />
     <None Include="MSBRMBuildInfo.nuspec.props" />

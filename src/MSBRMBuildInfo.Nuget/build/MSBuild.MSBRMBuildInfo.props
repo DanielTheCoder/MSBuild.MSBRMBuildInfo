@@ -1,0 +1,9 @@
+﻿<!--
+Implementing Deployment Markers in Application Insights
+http://blogs.msdn.com/b/visualstudioalm/archive/2013/11/14/implementing-deployment-markers-in-application-insights.aspx
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+
+  <Import Project="$(MSBuildProjectDirectory)\Properties\Build\RMBuildInfo.props" />
+
+</Project>

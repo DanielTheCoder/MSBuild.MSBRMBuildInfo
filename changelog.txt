@@ -1,1 +1,3 @@
+ - fix console workaround (will fix tfs-build integration path issue 'Illegal character in path *Undefined*')
+
 1.0.0 - 2015/02/27 (Initial publish)

@@ -18,10 +18,4 @@ http://blogs.msdn.com/b/visualstudioalm/archive/2013/11/14/implementing-deployme
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>
 
-  <!-- Workaround to allow 'GenerateBuildInfoConfigFile' also for console applications -->
-  <PropertyGroup Condition="'$(IsWap)' != 'true' and $(ProjectTypeGuids) == ''">
-    <WebProjectOutputDir>*Undefined*</WebProjectOutputDir>
-  </PropertyGroup>
-
-
 </Project>

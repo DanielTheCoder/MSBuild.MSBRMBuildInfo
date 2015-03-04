@@ -1,0 +1,34 @@
+﻿<!--
+Implementing Deployment Markers in Application Insights
+http://blogs.msdn.com/b/visualstudioalm/archive/2013/11/14/implementing-deployment-markers-in-application-insights.aspx
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+
+  <Import Project="IsWAP.props"/>
+
+  <!-- Workaround to allow 'GenerateBuildInfoConfigFile' also for console applications -->
+  <PropertyGroup Condition="'$(IsWap)' != 'true' and $(ProjectTypeGuids) == '' and $(WebProjectOutputDir) == ''">
+    <WebProjectOutputDir>*Undefined*</WebProjectOutputDir>
+  </PropertyGroup>
+
+  <Target Name="WorkaroundBuildInfoGenerationForConsoleApplications"
+          AfterTargets="AfterCompile"
+          BeforeTargets="CreateTfsBuildInfoFile"
+          DependsOnTargets="SetBuildInfoDefaults"
+          Condition="$(MSBRMBuildInfoLogging) == 'true'"
+          >
+
+    <Message Importance="high" Text="MSBuildProjectName: $(MSBuildProjectName)" />
+
+    <Message Importance="high" Text="ProjectTypeGuids: $(ProjectTypeGuids)" />
+    <Message Importance="high" Text="IsWap: $(IsWap)" />
+    <Message Importance="high" Text="WebProjectOutputDir: $(WebProjectOutputDir)" />
+
+    <Message Importance="high" Text="BuildingInTeamBuild: $(BuildingInTeamBuild)" />
+    <Message Importance="high" Text="GenerateBuildInfoConfigFile: $(GenerateBuildInfoConfigFile)" />
+    <Message Importance="high" Text="AddBuildInfoToAssembly: $(AddBuildInfoToAssembly)" />
+    <Message Importance="high" Text="IncludeServerNameInBuildInfo: $(IncludeServerNameInBuildInfo)" />
+
+  </Target>
+
+</Project>
