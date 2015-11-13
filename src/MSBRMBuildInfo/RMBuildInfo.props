@@ -8,7 +8,7 @@ http://blogs.msdn.com/b/visualstudioalm/archive/2013/11/14/implementing-deployme
     <!-- Generate the BuildInfo.config file -->
     <GenerateBuildInfoConfigFile>true</GenerateBuildInfoConfigFile>
 
-    <!-- Will add the builserver name -->
+    <!-- Will add the buildserver name -->
     <IncludeServerNameInBuildInfo>true</IncludeServerNameInBuildInfo>
 
     <!-- Will be embedded as unmanaged ressource -->
